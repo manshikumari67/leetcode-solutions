@@ -3,6 +3,8 @@ import java.util.Stack;
 
 // Basics How to use Stack and how to display reverse stack
 
+// insert at Bottom or any index
+
 
 public class StacksBasics {
 
@@ -33,6 +35,20 @@ public class StacksBasics {
          pushAtBottom(st,top);
     }
 
+    public static void insertAt( Stack<Integer> st ,int idx,int element){
+        Stack<Integer> rt=new Stack<>();
+
+        while(st.size()>idx){
+            rt.push(st.pop());
+        }
+        st.push(element);
+
+        while(rt.size()>0){
+            st.push(rt.pop());
+        }
+
+    }
+
     public static void main(String[] args) {
         Stack<Integer> st=new Stack<>();
         st.push(1);
@@ -43,7 +59,9 @@ public class StacksBasics {
         System.out.println(st);
         // System.out.println();
         // displayRev(st);
-        reverseStack(st);
+        // reverseStack(st);
+        // System.out.println(st);
+        insertAt(st, 2,50);
         System.out.println(st);
 
     }
