@@ -31,7 +31,13 @@ public class Implementation {
         System.out.println();
         System.out.println(size(a));
         System.out.println(sum(a));
+        System.out.println(level(a));
         
+    }
+
+     private static int level(Node root){
+        if(root==null) return 0;
+        return 1+Math.max(level(root.left), level(root.right));
     }
 
     private static int size(Node root){
