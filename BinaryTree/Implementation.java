@@ -1,4 +1,4 @@
-package BinaryTree;
+
 
 class Node{
     int val;
@@ -30,7 +30,7 @@ public class Implementation {
         display(a);
         System.out.println();
         System.out.println(size(a));
-        System.out.println(sum(a));
+        System.out.println(sum(a)); 
         System.out.println(level(a));
         
     }
@@ -42,6 +42,7 @@ public class Implementation {
 
     private static int size(Node root){
         if(root==null) return 0;
+        // if(root.left==null && root.right==null) return 1; 
         return 1+size(root.left)+size(root.right);
     }
 

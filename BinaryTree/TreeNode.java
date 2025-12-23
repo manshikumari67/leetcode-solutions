@@ -15,7 +15,7 @@ public class TreeNode {
   }
 
 class BinaryTreeInorderTraversal{
-   private static void inOrder(TreeNode node, List<Integer> ans) {
+   private static void inOrder(TreeNode node, List<Integer> ans) { 
         if (node == null) {
             return;
         }
