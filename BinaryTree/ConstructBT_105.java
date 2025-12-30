@@ -21,7 +21,7 @@ class TreeNode {
 public class ConstructBT_105 {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
        int n =inorder.length;
-       return build(0,n-1,0,n-1,inorder,preorder);
+       return build(0, n-1,0,n-1,inorder,preorder);
     }
     public static TreeNode build(int preLo,int preHi,int inLo,int inHi,int[] inorder,int[] preorder){
         if(preLo>preHi ||inLo > inHi) return null;
