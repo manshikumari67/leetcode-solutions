@@ -1,0 +1,6 @@
+public class SetKthBit {
+    public int setKthbit(int n, int k){
+         return n|(1<<k);
+    }
+}
+
