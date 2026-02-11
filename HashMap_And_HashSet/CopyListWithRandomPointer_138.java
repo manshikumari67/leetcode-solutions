@@ -1,8 +1,22 @@
+
 // 138. Copy List with Random Pointer
 
 // A linked list of length n is given such that each node contains an additional random pointer, which could point to any node in the list, or null.
 
+import java.util.HashMap;
+
 class CopyListWithRandomPointer_138{
+    class Node {
+        int val;
+        Node next;
+        Node random;
+
+        public Node(int val) {
+            this.val = val;
+            this.next = null;
+            this.random = null;
+        }
+    }
 
     public Node deepCopy(Node head1){
         Node temp1=head1;

@@ -1,4 +1,3 @@
-package BinarySearch;
 
 // Count Occurrences in a Sorted Array
 

@@ -1,4 +1,4 @@
-
+import java.util.HashMap;
 // Count Array Pairs Divisible By K
 
 // Given a 0-indexed integer array nums of length n and an integer k, return the number of pairs (i, j) such that:

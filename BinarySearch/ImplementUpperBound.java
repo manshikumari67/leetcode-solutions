@@ -1,5 +1,3 @@
-package BinarySearch;
-
 // Upper Bound
 
 // Given a sorted array of nums and an integer x, write a program to find the upper bound of x.

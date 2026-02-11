@@ -1,4 +1,3 @@
-package BinarySearchTree;
 
 // 701. Insert Into A Binary Tree
 

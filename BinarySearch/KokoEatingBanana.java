@@ -1,4 +1,4 @@
-package BinarySearch;
+
 
 // Koko eating bananas
 

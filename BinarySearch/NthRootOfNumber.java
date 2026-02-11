@@ -1,4 +1,3 @@
-package BinarySearch;
 
 // Find Nth root of a number
 

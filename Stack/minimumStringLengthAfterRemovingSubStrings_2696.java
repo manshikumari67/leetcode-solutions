@@ -1,4 +1,5 @@
-
+package Stack;
+import java.util.Stack;
 // 2696. Minimum String Length After Removing SubStrings
 
 // You are given a string s consisting only of uppercase English letters.

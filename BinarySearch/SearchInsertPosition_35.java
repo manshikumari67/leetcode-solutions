@@ -1,4 +1,3 @@
-package BinarySearch;
 
 // Search insert position
 

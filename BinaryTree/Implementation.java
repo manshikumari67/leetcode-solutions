@@ -103,10 +103,10 @@ public class Implementation {
         return root.val+sum(root.left)+sum(root.right);
     }
 
-    private static int max(Node root){
-        if(root==null) return Integer.MIN_VALUE;
-        return Math.max(root.val,Math.max(max(root.left), max(root.right)));
-    }
+    // private static int max(Node root){
+    //     if(root==null) return Integer.MIN_VALUE;
+    //     return Math.max(root.val,Math.max(max(root.left), max(root.right)));
+    // }
 
     private static void display(Node root){
         if(root==null) return;
