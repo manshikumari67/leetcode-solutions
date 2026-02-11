@@ -43,7 +43,7 @@ public class BottomView {
 
             // Store first node at that horizontal distance
             if (!map.containsKey(dist)) {
-                map.put(dist, node.data);
+                map.put(dist, node.val);
             }
 
             if (node.left != null)
