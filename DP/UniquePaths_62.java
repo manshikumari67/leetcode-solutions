@@ -7,14 +7,50 @@ package DP;
 // The test cases are generated so that the answer will be less than or equal to 2 * 109.
 
 public class UniquePaths_62 {
+    // public int uniquePaths(int m, int n) {
+    //     int[][] dp=new int[m][n];
+    //     for(int i=0;i<m;i++){
+    //         for(int j=0;j<n;j++){
+    //             if(i==0 || j==0) dp[i][j]=1;
+    //             else dp[i][j]=dp[i-1][j]+dp[i][j-1];
+    //         }
+    //     }
+    //     return dp[m-1][n-1];
+    // } 
+
+    // ---------------------------------------Memoization-----------------------------------------
+
+    static int[][] dp;
+
     public int uniquePaths(int m, int n) {
-        int[][] dp=new int[m][n];
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(i==0 || j==0) dp[i][j]=1;
-                else dp[i][j]=dp[i-1][j]+dp[i][j-1];
+
+        dp = new int[m + 1][n + 1];
+
+        // initialize with -1
+        for(int i = 0; i <= m; i++) {
+            for(int j = 0; j <= n; j++) {
+                dp[i][j] = -1;
             }
         }
-        return dp[m-1][n-1];
-    } 
+
+        return paths(m, n);
+    }
+
+    public int paths(int m, int n) {
+
+        // base case
+        if(m == 1 || n == 1) {
+            return 1;
+        }
+
+        // if already calculated
+        if(dp[m][n] != -1) {
+            return dp[m][n];
+        }
+
+        // store and return
+        dp[m][n] = paths(m - 1, n) + paths(m, n - 1);
+
+        return dp[m][n];
+    }
 }
