@@ -9,7 +9,6 @@ import java.util.List;
 // You are given an integer n. You need to find all the divisors of n. Return all the divisors of n as an array or list in a sorted order.
 // A number which completely divides another number is called it's divisor.
 
-
 public class DivisorOfANumber {
     public int[] divisors(int n) {
        List<Integer> list = new ArrayList<>();
