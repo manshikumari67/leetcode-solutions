@@ -6,9 +6,7 @@ import java.util.List;
 
 // Given an array of strings strs, group the anagrams together. You can return the answer in any order.
 
- 
-
-public class GroupAnagrams_49 {
+ public class GroupAnagrams_49 {
      public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String,List<String>> map=new HashMap<>();
         for(int i=0;i<strs.length;i++){
